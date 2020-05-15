@@ -1,7 +1,7 @@
 const express = require("express");
 
 var app = express();
-var port = process.env.port || 2222;
+var port = process.env.PORT || 2222;
 
 app.get("/data", (req,res) =>{
     var data = [{
