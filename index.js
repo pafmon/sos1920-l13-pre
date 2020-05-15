@@ -3,7 +3,11 @@ const express = require("express");
 var app = express();
 var port = process.env.PORT || 2222;
 
+
 console.log("process.env.PORT = "+ process.env.PORT);
+
+console.log("process.env : "+ JSON.stringify(process.env,null,2));
+
 
 app.get("/data", (req,res) =>{
     var data = [{
